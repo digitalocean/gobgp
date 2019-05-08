@@ -22,11 +22,11 @@ import (
 	"strconv"
 	"time"
 
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/internal/pkg/config"
-	"github.com/osrg/gobgp/internal/pkg/table"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
-	"github.com/osrg/gobgp/pkg/packet/bmp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/internal/pkg/config"
+	"github.com/osrg/gobgp/v2/internal/pkg/table"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
+	"github.com/osrg/gobgp/v2/pkg/packet/bmp"
 	log "github.com/sirupsen/logrus"
 )
 

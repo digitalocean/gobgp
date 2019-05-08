@@ -22,7 +22,7 @@ import (
 	"strconv"
 
 	"github.com/golang/protobuf/ptypes"
-	api "github.com/osrg/gobgp/api"
+	api "github.com/osrg/gobgp/v2/api"
 	"github.com/spf13/cobra"
 )
 

@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/osrg/gobgp/internal/pkg/version"
+	"github.com/osrg/gobgp/v2/internal/pkg/version"
 	"google.golang.org/grpc"
 )
 

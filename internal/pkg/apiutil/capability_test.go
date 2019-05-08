@@ -20,8 +20,8 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
 	"github.com/stretchr/testify/assert"
 )
 

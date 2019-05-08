@@ -28,8 +28,8 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
 )
 
 const globalRIBName = "global"

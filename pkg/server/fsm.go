@@ -27,10 +27,10 @@ import (
 	"time"
 
 	"github.com/eapache/channels"
-	"github.com/osrg/gobgp/internal/pkg/config"
-	"github.com/osrg/gobgp/internal/pkg/table"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
-	"github.com/osrg/gobgp/pkg/packet/bmp"
+	"github.com/osrg/gobgp/v2/internal/pkg/config"
+	"github.com/osrg/gobgp/v2/internal/pkg/table"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
+	"github.com/osrg/gobgp/v2/pkg/packet/bmp"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -1818,7 +1818,7 @@ func (h *fsmHandler) established(ctx context.Context) (bgp.FSMState, *fsmStateRe
 			fsm.lock.RUnlock()
 			// Do not return hold timer expired to server if graceful restart is enabled
 			// Let it fallback to read/write error or fsmNotificationSent handled above
-			// Reference: https://github.com/osrg/gobgp/issues/2174
+			// Reference: https://github.com/osrg/gobgp/v2/issues/2174
 			if !s.Enabled {
 				return bgp.BGP_FSM_IDLE, newfsmStateReason(fsmHoldTimerExpired, m, nil)
 			}

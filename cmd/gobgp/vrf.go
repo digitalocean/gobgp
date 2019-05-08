@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/internal/pkg/apiutil"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/internal/pkg/apiutil"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
 
 	"github.com/golang/protobuf/ptypes/any"
 	"github.com/spf13/cobra"

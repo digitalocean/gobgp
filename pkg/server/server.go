@@ -31,12 +31,12 @@ import (
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/internal/pkg/apiutil"
-	"github.com/osrg/gobgp/internal/pkg/config"
-	"github.com/osrg/gobgp/internal/pkg/table"
-	"github.com/osrg/gobgp/internal/pkg/zebra"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/internal/pkg/apiutil"
+	"github.com/osrg/gobgp/v2/internal/pkg/config"
+	"github.com/osrg/gobgp/v2/internal/pkg/table"
+	"github.com/osrg/gobgp/v2/internal/pkg/zebra"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
 )
 
 type tcpListener struct {
@@ -1180,7 +1180,7 @@ func (s *BgpServer) propagateUpdate(peer *peer, pathList []*table.Path) {
 					// given RT on RTM NLRI is already removed from adj-RIB-in.
 					_, candidates = s.getBestFromLocal(peer, fs)
 				} else {
-					// https://github.com/osrg/gobgp/issues/1777
+					// https://github.com/osrg/gobgp/v2/issues/1777
 					// Ignore duplicate Membership announcements
 					membershipsForSource := s.globalRib.GetPathListWithSource(table.GLOBAL_RIB_NAME, []bgp.RouteFamily{bgp.RF_RTC_UC}, path.GetSource())
 					found := false

@@ -22,8 +22,8 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes"
-	api "github.com/osrg/gobgp/api"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
+	api "github.com/osrg/gobgp/v2/api"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
 )
 
 // workaround. This for the json format compatibility. Once we update senario tests, we can remove this.

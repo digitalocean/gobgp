@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/osrg/gobgp/internal/pkg/config"
-	"github.com/osrg/gobgp/internal/pkg/table"
-	"github.com/osrg/gobgp/pkg/packet/bgp"
-	"github.com/osrg/gobgp/pkg/packet/rtr"
+	"github.com/osrg/gobgp/v2/internal/pkg/config"
+	"github.com/osrg/gobgp/v2/internal/pkg/table"
+	"github.com/osrg/gobgp/v2/pkg/packet/bgp"
+	"github.com/osrg/gobgp/v2/pkg/packet/rtr"
 
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
