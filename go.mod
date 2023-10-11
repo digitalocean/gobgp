@@ -32,9 +32,7 @@ require (
 	github.com/stretchr/testify v1.6.0
 	github.com/vishvananda/netlink v0.0.0-20170802012344-a95659537721
 	github.com/vishvananda/netns v0.0.0-20170707011535-86bef332bfc3 // indirect
-	golang.org/x/net v0.0.0-20200528225125-3c3fba18258b
-	golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208 // indirect
-	golang.org/x/text v0.3.2 // indirect
+	golang.org/x/net v0.17.0
 	google.golang.org/genproto v0.0.0-20170731182057-09f6ed296fc6 // indirect
 	google.golang.org/grpc v1.5.1
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
